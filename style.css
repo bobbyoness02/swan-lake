@@ -1,0 +1,57 @@
+*{   box-sizing: border-box;     font-family: Ubuntu,Arial, Helvetica, sans-serif;   transition: 0.2s;}
+
+.max-width{  max-width: 1170px;  margin: auto;  }
+
+.container{  display: flex; justify-content: space-between;    align-items: center;     }
+
+body{     margin: 0;     padding: 0;    background: #999;   }
+
+/* Header */
+header{   background-color: #1c1c1c;    padding: 34px 0 70px; position: relative;    }
+header .container{  display: flex; justify-content: space-between;    align-items: center;     }
+header .container img{   height: fit-content;  width: auto;     }
+
+     /* Header list */
+     header ul{     list-style: none;   margin: 0;     padding: 0 15px;    display: flex;    }
+     header .header li{     padding: 0 55px;    position: relative;}
+     header .header li>*{   display: block;     text-align: right;}
+     header .header li::after{   content: "";   display: inline-block;   height: 40px;  width: 40px;   padding: 5px;   border: 1px solid #292929;  border-radius: 50px;     position: absolute;  right: -45px;  top: 50%; transform: translate(-50%, -50%);}
+     header .header li::before{  content: "\f0e0";   display: inline-block;   position: absolute; font-family: fontawesome;     color: #698cf0;     top: 50%; right: 0;  font-size: 18px; transform: translate( 1px, -50%);    }
+     header .header li:last-child::before{ content: "\f095";   font-size: 20px;}
+     header .header li strong{   color: #999;   font-size: 14px;    margin-bottom: 5px; }
+     header .header li a{   color: white;  text-decoration: none;   font-size: 14px;}
+
+     /* Nav Menu */
+     header .nav-menu{   position: absolute; top: 75%;   left: 0;  width: 100%; }
+     header .nav-menu .container{  background-color: #fff;      padding: 18px 31px 18px 28px;  border-radius: 5px; }
+     header .nav-menu ul{     padding: 0;    }
+     header .nav-menu li{     padding: 0 15px;    }
+     header .nav-menu .left li:first-child{   padding-left: 0;}
+     header .nav-menu li a{   text-decoration: none;   color: #333;    font-weight: 600;    font-size: 14px;    }
+     header .nav-menu li a:hover, header .nav-menu li a:focus{  color: #698cf0;     }
+     header .nav-menu .right li{   background-color: #698cf0;    padding: 10px 15px; border-radius: 3px; }
+     header .nav-menu .right li:hover{  background: #1c1c1c;     }
+     header .nav-menu .right li:hover a{     color: #698cf0;     }
+     header .nav-menu .right li a{ color: #fff;   font-size: 13px;    }
+
+/* Hero Banner */
+#hero-bnr{     background-image: url(Media/hero\ banner.jpg);     background-position: center center;    background-size: cover;  background-repeat: no-repeat; background-attachment: fixed; }
+#hero-bnr .container{    align-items: flex-start;}
+#hero-bnr .overlay{ width: 100%;   height: 100%;  background-color: rgba(0, 0, 0, 0.75);   padding: 220px 0;   }
+#hero-bnr .left{    color: #fff;    }
+#hero-bnr .left h2{ font-size: 48px;    margin: 0 0 18px;  }
+#hero-bnr .left h2 span{ display: block; color: #698cf0;    }
+#hero-bnr .left .divider{     display: inline-block;   height: 10px;   width: 60px;   background-image: url("Media/wave\ line.png");   margin: 0 0 45px;   ;}
+#hero-bnr .left>:last-child{       display: block;     padding: 18px 20px; background: #698cf0; width: fit-content;  border-radius: 2px;   font-size: 14px;  font-weight: bold;      line-height: 1.714; }
+#hero-bnr .container .left{   width: 60%;    position: relative;}
+#her-bnr .left img{ position: absolute; left: 450px;    top: 250px;   }
+#hero-bnr .container .right{  width: 460px;    }
+#hero-bnr .right{     background: url("Media/Reg\ Now\ Background.jpg");      padding: 56px 30px 69px; text-align: center;   margin: -95px 0;    border-radius: 3px; }
+#hero-bnr .right input{  display: block;   width: 100%;     padding: 6px 23px;  height: 48px;  outline: 0;    border: none; border-radius: 4px; border: 1px solid #eee;   margin-bottom: 20px;     background-color: #f5f5f5}
+#hero-bnr form ::placeholder{     opacity: .7;}
+#hero-bnr .right h2{ font-size: 28px;    margin: 0 0 5px;}
+#hero-bnr .right p{ margin: 0 0 49px;     }
+#hero-bnr .form-msg span:first-child{   font-size: 11px;    padding-left: 20px; opacity: .5;   position: relative; }
+#hero-bnr form span:last-child{    background-color: #698cf0;    padding: 10px 15px;  font-size: initial; color: #fff;   font-weight: bold;  line-height: 1.7;  border-radius: 3px; }
+#hero-bnr .form-msg{     display: flex; justify-content: space-between;    align-items: center;     }
+#hero-bnr .form-msg span:first-child::after{ content: "i"; background-color: #0042ff;     border-radius: 50%;     color: #fff;   padding: 1px 5px;    position: absolute; top: 0;   left: 0;  ;}
