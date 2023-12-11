@@ -1,10 +1,14 @@
 *{   box-sizing: border-box;     font-family: Ubuntu,Arial, Helvetica, sans-serif;   transition: 0.2s;}
 
-.max-width{  max-width: 1170px;  margin: auto;  }
+.max-width{  max-width: 1170px;  margin: auto;  padding: 0 15px; }
 
-.container{  display: flex; justify-content: space-between;    align-items: center;     }
+.container{  display: flex; justify-content: space-between;    align-items: center;     margin: 0 -15px; }
 
-body{     margin: 0;     padding: 0;    background: #999;   }
+body{     margin: 0;     padding: 0;  }
+
+.btn{     background-color: #689cf0;    }
+.btn:hover{    background-color: #1c1c1c !important;    border: 1px solid #999;}
+
 
 /* Header */
 header{   background-color: #1c1c1c;    padding: 34px 0 70px; position: relative;    }
@@ -41,6 +45,7 @@ header .container img{   height: fit-content;  width: auto;     }
 #hero-bnr .left{    color: #fff;    }
 #hero-bnr .left h2{ font-size: 48px;    margin: 0 0 18px;  }
 #hero-bnr .left h2 span{ display: block; color: #698cf0;    }
+#hero-bnr .left img{     position: absolute; right: 80px;   top: 250px;    }
 #hero-bnr .left .divider{     display: inline-block;   height: 10px;   width: 60px;   background-image: url("Media/wave\ line.png");   margin: 0 0 45px;   ;}
 #hero-bnr .left>:last-child{       display: block;     padding: 18px 20px; background: #698cf0; width: fit-content;  border-radius: 2px;   font-size: 14px;  font-weight: bold;      line-height: 1.714; }
 #hero-bnr .container .left{   width: 60%;    position: relative;}
@@ -55,3 +60,114 @@ header .container img{   height: fit-content;  width: auto;     }
 #hero-bnr form span:last-child{    background-color: #698cf0;    padding: 10px 15px;  font-size: initial; color: #fff;   font-weight: bold;  line-height: 1.7;  border-radius: 3px; }
 #hero-bnr .form-msg{     display: flex; justify-content: space-between;    align-items: center;     }
 #hero-bnr .form-msg span:first-child::after{ content: "i"; background-color: #0042ff;     border-radius: 50%;     color: #fff;   padding: 1px 5px;    position: absolute; top: 0;   left: 0;  ;}
+
+/* About Swan Lake */
+#aboutsl{ padding: 120px 0 60px;   background-color: #fff;}
+#aboutsl .container{     display: block;     text-align: center;}
+#aboutsl h2{   color: #333;    font-size: 28px;    margin: 0 0 18px;   }
+#aboutsl h2 span{   color: #698cf0;     }
+#aboutsl .container>p{   margin: 15px auto 76px;  width: 850px;     }
+#aboutsl .row{ width: 100%;   display: flex; margin : 0 -15px;   }
+
+     /* About boxes */
+     #aboutsl .row .about-box{     width: 25%;    text-align: left;   padding: 0 15px 60px 15px;    }
+     #aboutsl .about-box h2{  color: #698cf0}
+     #aboutsl .about-box strong{   display: block;     margin: 0 0 10px;   }
+     #aboutsl .about-box .wave-divider{ height: 10px; width: 35px;   background: url('media/divider-mini.png');    margin: 0 0 17px;   }
+     #aboutsl .about-box p{     width: 95%;    line-height: 1.4; opacity: 0.5;  }
+     #aboutsl .about-box p, #aboutsl .about-box a{     font-size: 14px;    }
+     #aboutsl .about-box a{   color: #698cf0;     text-decoration: none;   font-weight: 700;   }
+
+/* Counter Box */
+#counter-sec{  padding: 120px 0;   background: url('media/Counter\ section.jpg'); background-position: center; background-repeat: no-repeat;   background-size: cover;  }
+#counter-sec .counter-box{    width: 25%;    text-align: center; padding: 20px; }
+#counter-sec .counter-box h2{ color: #698cf0;     font-size: 72px;    font-weight: 500;  font-family: Open Sans;    margin: 0;    line-height: 1;     }
+#counter-sec .counter-box p{  color: #999;     margin: 0;     } 
+
+/* Services */
+#services {    padding: 120px 0 60px;   }
+#services .container{    align-items: flex-start; margin: 0 -30px;    }
+#services .container>*{     padding: 0 15px 60px;   }
+#services .left, #services .right{    width: 50%;    height: 100%;}
+#services .left ul{ list-style: none;   padding: 0;    margin: 0;   border-radius: 4px;   overflow: hidden;    background-image: url('media/services\ box\ background.jpg'); background-position: center;     background-repeat: no-repeat; }
+#services .left .bg-trans{    background: rgba(21,21,21,0.8);    }
+#services .right .txt-box{    padding:40px 0 0 40px;   }
+#services .right h2, #services .right p,#services .right ul{     margin: 0;     padding: 0;    list-style: none;   }
+#services .right h2{     color: #333;   font-size: 28px;     margin: 0 0 25px;    }
+#services .right h2 span{        color: #698cf0;  }
+#services .right .divider{ display: inline-block; height: 10px; width: 62px;   background: url('media/divider-mini.png');    margin: 0 0 17px;   }
+#services .right p{ color: #999;   font-size: 14px;    font-family: open sans;  margin-bottom: 30px;     line-height: 25px;  ;}
+#services .right ul{     padding-left: 20px; }
+
+
+     /* List Items */
+     #services .left li{ text-align: center; overflow: hidden;   width: 50%;    height: 230px; float: left;   background: #212121; }
+     #services .left li .icon::after{  content: '\e005';   display: inline-block;   font-size: 50px; font-family: 'icomoon'; color: #698cf0;  margin: 60px 0 30px;  }
+     #services .left li:nth-child(2) .icon::after{ content: '\e000';  }
+     #services .left li:nth-child(3) .icon::after{ content: '\e031';  }
+     #services .left li:nth-child(4) .icon::after{ content: '\e02b';  }
+     #services .left li h4{   color: #698cf0;     font-size: 18px;    margin: 0 0 15px;   font-weight: 700;   }
+     #services .left li .divider{  display: inline-block;   height: 10px;  width: 35px;   background-image: url('media/divider-mini.png');  }
+     #services .left li p{    color: #999;   margin: 40px 0 0;   }
+     #services .right ul li{  text-transform: capitalize;   font-weight: 600;   line-height: 35px;  color: #777;   font-size: 14px;    }
+     #services .right ul li::before{    content: '\f0da'; font-family: fontawesome;  color: #698cf0;     margin-left: -15px; padding-right: 15px;     font-size: 16px;    display: inline-block;   vertical-align: middle;  }
+
+/* Pricing Table */
+#pricing-tbl .max-width{ padding : 0 15px;   }
+#pricing-tbl{  padding: 120px 0 60px;   background-image: url('media/Reg\ Now\ Background.jpg');    background-size: cover;  background-repeat: no-repeat; background-position: center center;}
+#pricing-tbl .container{ display: block;     text-align: center; }
+#pricing-tbl h2 span{    color: #698cf0;     }
+#pricing-tbl .container > .divider{   display: inline-block;   height: 10px;  width: 48px;   background-image: url('media/divider-mini.png');  margin-bottom: 15px;     }
+#pricing-tbl .container > p{     margin:   0; margin-bottom: 70px;     color: #999;  font-size: 14px;    }
+
+     /* pricing lists */
+     #pricing-tbl ul{    list-style: none;   margin: 0; padding: 0;   display: flex; justify-content: space-between;}
+     #pricing-tbl li{    text-align: left;   width: 30%;    padding-bottom: 60px;    }
+     /* First Child in List */
+     #pricing-tbl li div:first-child{   border: 1px solid #eee;  padding : 30px 35px;     background-color: #fff;  }
+     #pricing-tbl li div:first-child strong{ font-size: 14px;    color: #333;   display: block;     }
+     #pricing-tbl li div:first-child  h2{ font-size: 14px;   display: inline-block;   vertical-align: bottom; color: #999;     font-weight: 400;   }
+     #pricing-tbl li div:first-child h2 span{ font-size: 38px;      color: #698cf0;     display: inline-block;   vertical-align: bottom;     font-family: open sans;  line-height: 35px;  }
+     #pricing-tbl li div:first-child p{ margin: 0;     font-size: 13px;    color: #999;   }
+     /* Last Child in List */
+     #pricing-tbl li div:last-child{    border: 1px solid #eee;  padding : 40px 35px;     background-color: #fff;     }
+     #pricing-tbl li div:last-child h2{ color: #333;   font-size: 18px;    margin: 0 0 20px;   }
+     #pricing-tbl li div:last-child .divider{     display: inline-block;   height: 10px;  width: 35px;   background-image: url('media/divider-mini.png');  margin-bottom: 5px;     }
+     #pricing-tbl li div:last-child p{    color: #999; margin: 0;     margin-bottom: 25px;     }     
+     #pricing-tbl li div:last-child a{  text-decoration: none;   color: #698cf0;     font-size: 14px;    font-weight: 700;   font-size: 14px;    }
+
+/* Get a free quote today */
+#cre-un{  position: relative; padding: 120px 0;   background-image: url('media/free\ quote\ background\ image.jpg');    background-position: center center; background-size: cover; background-attachment: fixed; }
+#cre-un::after{     content: "";   background-color: #000;  position: absolute; z-index: 0;    top: 0;   left: 0;  width: 100%;   height: 100%;  opacity: 0.8;  }
+#cre-un .container{ display: block;     text-align: center; color: #f8f8f8; position: relative;   z-index: 5;    }
+#cre-un .container span:first-child{    font-size: 14px;    line-height: 1.7;   font-family: open sans;  }
+#cre-un h1{    margin: 0 0 20px;   font: 700 48px ubuntu; color: #698cf0;  }
+#cre-un .divider{   display: inline-block;   height: 10px;  width: 62px;   background-image: url('media/divider-mini.png');  margin-bottom: 5px; }
+#cre-un .container p{    font-size: 14px;    line-height: 1.7;   margin: 0 0 50px;   }
+#cre-un span:last-child{     background: #698cf0;     padding: 20px 45px;  font-size: 14px;    font-weight: 700;   line-height: 1.7;   border-radius: 2px; letter-spacing: .5px;     }
+
+
+/* Footer */
+footer{   background-color: #1c1c1c;    padding: 35px 0 0; position: relative;    }
+footer .container{  display: flex; justify-content: space-between;    align-items: center;     }
+footer .container img{   height: fit-content;  width: auto;     }
+          
+     /* Footer list */
+     footer ul{     list-style: none;   margin: 0;     padding: 0 15px;    display: flex;    }
+     footer .footer li{     padding: 0 55px;    position: relative;}
+     footer .footer li>*{   display: block;     text-align: right;}
+     footer .footer li::after{   content: "";   display: inline-block;   height: 40px;  width: 40px;   padding: 5px;   border: 1px solid #292929;  border-radius: 50px;     position: absolute;  right: -45px;  top: 50%; transform: translate(-50%, -50%);}
+     footer .footer li::before{  content: "\f0e0";   display: inline-block;   position: absolute; font-family: fontawesome;     color: #698cf0;     top: 50%; right: 0;  font-size: 18px; transform: translate( 1px, -50%);    }
+     footer .footer li:last-child::before{ content: "\f095";   font-size: 20px;}
+     footer .footer li strong{   color: #999;   font-size: 14px;    margin-bottom: 5px; }
+     footer .footer li a{   color: white;  text-decoration: none;   font-size: 14px;}
+
+     /* Footer Bottom */
+     #footer-btm{      margin-top: 20px;   }
+     #footer-btm .container{   border-top: .5px solid #292929;  padding: 25px 20px;     color: #999;    font-size: 14px;    margin: 0 -35px; }
+     #footer-btm .container .sm-icons a{     text-decoration: none;   color: #666;     }
+     #footer-btm .container .sm-icons a:hover{    color: #fff;   }
+     #footer-btm .container .sm-icons span::after{     font-family: fontawesome; font-size: 16px;   padding: 0 15px;    }
+     #footer-btm .container .sm-icons  a:nth-child(1) span::after{  content: "\f09a";       }
+     #footer-btm .container .sm-icons  a:nth-child(2) span::after{  content: "\f1b4";   }
+     #footer-btm .container .sm-icons  a:nth-child(3) span::after{  content: "\f099";   }
