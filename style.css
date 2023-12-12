@@ -33,7 +33,7 @@ header .container img{   height: fit-content;  width: auto;     }
 
      /* Nav Menu */
      header .nav-menu{   position: absolute; top: 75%;   left: 0;  width: 100%; }
-     header .nav-menu .container{  background-color: #fff;      padding: 18px 31px 18px 28px;  border-radius: 5px; }
+     header .nav-menu .container{  background-color: #fff;      padding: 17px 30px;  border-radius: 4px; }
      header .nav-menu ul{     padding: 0;    }
      header .nav-menu li{     padding: 0 15px;    }
      header .nav-menu .left li:first-child{   padding-left: 0;}
@@ -173,3 +173,9 @@ footer .container img{   height: fit-content;  width: auto;     }
      #footer-btm .container .sm-icons  a:nth-child(1) span::after{  content: "\f09a";       }
      #footer-btm .container .sm-icons  a:nth-child(2) span::after{  content: "\f1b4";   }
      #footer-btm .container .sm-icons  a:nth-child(3) span::after{  content: "\f099";   }
+
+
+/* Media Query starts from here */
+@media screen and (max-width: 1219px) {
+     .max-width{    max-width: 970px;   ;}
+}
