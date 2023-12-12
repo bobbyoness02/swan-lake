@@ -50,7 +50,6 @@ header .container img{   height: fit-content;  width: auto;     }
 #hero-bnr .overlay{ width: 100%;   height: 100%;  background-color: rgba(0, 0, 0, 0.75);   padding: 220px 0;   }
 #hero-bnr .left{    color: #fff;    }
 #hero-bnr .left h2{ font-size: 48px;    margin: 0 0 18px;  }
-#hero-bnr .left h2 span{ display: block;     }
 #hero-bnr .left img{     position: absolute; right: 80px;   top: 250px;    }
 #hero-bnr .left .divider{     margin: 0 0 45px;   ;}
 #hero-bnr .left>:last-child{       display: block;     padding: 18px 20px; background: #698cf0; width: fit-content;  border-radius: 2px;   font-size: 14px;  font-weight: bold;      line-height: 1.714; }
@@ -71,7 +70,7 @@ header .container img{   height: fit-content;  width: auto;     }
 #aboutsl{ padding: 120px 0 60px;   background-color: #fff;}
 #aboutsl .container{     display: block;     text-align: center;}
 #aboutsl h2{   color: #333;    font-size: 28px;    margin: 0 0 18px;   }
-#aboutsl .container>p{   margin: 15px auto 76px;  width: 850px;     }
+#aboutsl .container>p{   margin: 15px auto 76px;  width: 850px;     color: #999;     }
 #aboutsl .row{ width: 100%;   display: flex; margin : 0 -15px;   }
 
      /* About boxes */
@@ -178,4 +177,13 @@ footer .container img{   height: fit-content;  width: auto;     }
 /* Media Query starts from here */
 @media screen and (max-width: 1219px) {
      .max-width{    max-width: 970px;   ;}
+
+     /* Hero Banner */
+     #hero-bnr .container .right{  width: auto;   }
+     #hero-bnr .form-msg{     flex-flow: row wrap;     justify-content: center;}
+     #hero-bnr form span:last-child{    margin-top: 20px;   }
+
+     /* Services */
+     #services .right p{ margin-bottom: 15px;     }
+     #services .right ul li{  line-height: 30px;  }
 }
