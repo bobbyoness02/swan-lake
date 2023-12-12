@@ -103,14 +103,16 @@ header .container img{   height: fit-content;  width: auto;     }
 
 
      /* List Items */
-     #services .left li{ text-align: center; overflow: hidden;   width: 50%;    height: 230px; float: left;   background: #212121; }
+     #services .left li{ text-align: center; overflow: hidden;   width: 50%;    height: 230px; float: left;   background: #212121; padding: 0 15px;   }
+     #services .left li:hover .icon::after{  margin-top: -30px;  opacity: 0;    transition: 0.5s;   transform: translateY(-30px); }
      #services .left li .icon::after{  content: '\e005';   display: inline-block;   font-size: 50px; font-family: 'icomoon'; color: #698cf0;  margin: 60px 0 30px;  }
      #services .left li:nth-child(2) .icon::after{ content: '\e000';  }
      #services .left li:nth-child(3) .icon::after{ content: '\e031';  }
      #services .left li:nth-child(4) .icon::after{ content: '\e02b';  }
      #services .left li h4{   color: #698cf0;     font-size: 18px;    margin: 0 0 15px;   font-weight: 700;   }
      #services .left li .divider{  width: 35px;   }
-     #services .left li p{    color: #999;   margin: 40px 0 0;   }
+     #services .left li:hover p{   opacity: 1;    transition: 0.5s;   }
+     #services .left li p{    color: #999;   margin: 20px 0 0;   font-size: 14px;    opacity: 0;}
      #services .right ul li{  text-transform: capitalize;   font-weight: 600;   line-height: 35px;  color: #777;   font-size: 14px;    }
      #services .right ul li::before{    content: '\f0da'; font-family: fontawesome;  color: #698cf0;     margin-left: -15px; padding-right: 15px;     font-size: 16px;    display: inline-block;   vertical-align: middle;  }
 
