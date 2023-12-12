@@ -1,5 +1,7 @@
 *{   box-sizing: border-box;     font-family: Ubuntu,Arial, Helvetica, sans-serif;   transition: 0.25s;}
 
+html{     scroll-behavior: smooth;}
+
 .max-width{  max-width: 1170px;  margin: auto;  padding: 0 15px; }
 
 .container{  display: flex; justify-content: space-between;    align-items: center;     margin: 0 -15px; }
@@ -24,7 +26,7 @@ header .container{  display: flex; justify-content: space-between;    align-item
 header .container img{   height: fit-content;  width: auto;     }
 
      /* Header list */
-     header .mobi-nav{   display: block;}
+     header #mobi-nav, #mobi-nav .mobile-menu{   display: none;}
      header ul{     list-style: none;   margin: 0;     padding: 0 15px;    display: flex;    }
      header .header li{     padding: 0 55px;    position: relative;}
      header .header li>*{   display: block;     text-align: right;}
@@ -73,7 +75,7 @@ header .container img{   height: fit-content;  width: auto;     }
 #aboutsl{ padding: 120px 0 60px;   background-color: #fff;}
 #aboutsl .container{     display: block;     text-align: center;}
 #aboutsl h2{   color: #333;    font-size: 28px;    margin: 0 0 18px;   }
-#aboutsl .container>p{   margin: 15px auto 76px;  color: #999;     font-size: 14px;  }
+#aboutsl .container>p{   margin: 15px auto 76px;  color: #999;     font-size: 14px;  padding: 0 15px;}
 #aboutsl .row{ width: 100%;   display: flex; flex-flow: row wrap;     }
 
      /* About boxes */
@@ -105,7 +107,7 @@ header .container img{   height: fit-content;  width: auto;     }
 #services .right ul{     padding-left: 20px; }
 
      /* List Items */
-     #services .left li{ text-align: center; overflow: hidden;   width: 50%;    height: 230px; float: left;   background: #212121; padding: 0 15px;   }
+     #services .left li{ text-align: center; overflow: hidden;   width: 50%;    height: 230px; float: left;   background-color: #212121; padding: 0 15px;   }
      #services .left li:hover .icon::after{  margin-top: -30px;  opacity: 0;    transition: 0.3s ease-in-out;   transform: translateY(-30px); }
      #services .left li .icon::after{  content: '\e005';   display: inline-block;   font-size: 50px; font-family: 'icomoon'; color: #698cf0;  margin: 60px 0 30px;  }
      #services .left li:nth-child(2) .icon::after{ content: '\e000';  }
@@ -168,7 +170,7 @@ footer .container img{   height: fit-content;  width: auto;     }
      footer .footer li a{   color: white;  text-decoration: none;   font-size: 14px;}
 
      /* Footer Bottom */
-     #footer-btm{      margin-top: 20px;   }
+     #footer-btm{      margin-top: 20px;       padding: 0 15px;  }
      #footer-btm .container{   border-top: .5px solid #292929;  padding: 25px 20px;     color: #999;    font-size: 14px;    margin: 0 -35px; }
      #footer-btm .container .sm-icons a{     text-decoration: none;   color: #666;     }
      #footer-btm .container .sm-icons a:hover{    color: #fff;   }
@@ -176,6 +178,11 @@ footer .container img{   height: fit-content;  width: auto;     }
      #footer-btm .container .sm-icons  a:nth-child(1) span::after{  content: "\f09a";       }
      #footer-btm .container .sm-icons  a:nth-child(2) span::after{  content: "\f1b4";   }
      #footer-btm .container .sm-icons  a:nth-child(3) span::after{  content: "\f099";   }
+     
+/* Go to top */
+#got {    padding: 15px 15px;     border-radius: 3px; background-color: #252525;     display: inline-block;   position: sticky; top: 91%;  left: 90%;       right: 20px;  z-index: 50; }
+#got a{   text-decoration: none;  color: #fff;     scroll-behavior: smooth;}
+#got a::after{ content: "\f077";    font-family: 'FontAwesome';  font-size: 18px;    display: inline-block;}
 
 
 /* Media Query starts from here */
@@ -230,12 +237,13 @@ footer .container img{   height: fit-content;  width: auto;     }
 
      /* About us */
      #aboutsl .about-box p, #aboutsl .about-box a{     font-size: 13px;    }
-     #aboutsl .row .about-box{     width: 50%;    }
+     #aboutsl .row .about-box{     width: 100%;    }
      #aboutsl .about-box .divider{ margin: 0;     }
 
      /* Counter Section */
      #counter-sec .container h2{    font-size: 50px;    }
      #counter-sec .counter-box p{     font-size: 14px;    }
+     #counter-sec .counter-box{    width: 100%;   }
 
      /* Services */
      #services .container{    flex-flow: row wrap-reverse;  }
@@ -247,12 +255,16 @@ footer .container img{   height: fit-content;  width: auto;     }
      #pricing-tbl li{    width: 48%;    }
 }
 
-@media screen and (max-width: 749px){
-     .max-width{    max-width: 90%;}
+@media screen and (max-width: 768px){
+     .max-width{    max-width: 970px;   }
+     .container{    margin: 0;     }
      /* Header */
      header{   padding: 20px 15px; }
      header ul{     display: none; }
-     header #mobi-nav{   display: block;}
+     header #mobi-nav{   display: block;     height: 30px;   width: 30px;   }
+     header #mobi-nav::after{ content: "\f0c9";   font-size: 30px;    font-family: FontAwesome;     color: #698cf0;     }
+     
+
 
      /* Navigation Bar */
      nav{ display: none;}
@@ -265,7 +277,44 @@ footer .container img{   height: fit-content;  width: auto;     }
      #hero-bnr .form-msg{     justify-content: space-between;    align-items: center;     }
      #hero-bnr form span:last-child{    margin: 0;     }
 
-     /* Footer */
-     footer .container{  display: block;     }
+     /* About Swan Lake */
+     #aboutsl .max-width{     padding: 0;    }
 
+     /* Services */
+     #services .max-width{    padding: 0;}
+     #services .container{    margin: auto;}
+     #services .right .txt-box{    padding: 0;    }
+     #services .left ul{     background-repeat: repeat-y;   background-position: center -40px;    background-size: contain;  }
+     #services .left li{ width: 100%;   }
+     #services .left ul .bg-trans{ background-color: #212121;}
+     #services .left ul .mob-bg-tr{     background-color: rgba(21,21,21,0.8);   }
+
+     /* Pricing Table */
+     #pricing-tbl ul li{ width: 100%;   }
+     #pricing-tbl li div:first-child{   padding: 30px 70px; }
+     #pricing-tbl li div:last-child{    padding: 40px 70px; }
+
+     /* Creative unbounce landing page */
+     #cre-un{  background-position: center left -200px;     }
+
+     /* Footer */
+     footer .footer .container{  display: block;     }
+     footer .footer ul{  padding:  40px 0 0;}
+     footer .footer li>*{     text-align: left !important;   }
+     footer .footer li{  padding: 0 20px 0 60px;  }
+     footer .footer li::after{     left: 25px;  }
+     footer .footer li::before{    left: 15px;    }
+     #footer-btm{   padding: 0;    }
+     #footer-btm .container{  margin: 0;     padding: 20px 0;    }
+
+     /* Go to top */
+     #got{     top: 80%; }
+}
+
+@media screen and (max-width: 480px) {
+     
+
+     /* Footer */
+     footer .footer ul{     display: block;  padding: 0;}
+     footer .footer ul li{        margin-top: 30px;     }
 }
