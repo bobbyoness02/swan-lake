@@ -2,7 +2,7 @@
 
 :hover{   transition: 0.25s;  }
 
-html{     scroll-behavior: smooth;}
+html{     scroll-behavior: smooth; }
 
 .max-width{  max-width: 1170px;  margin: auto;  padding: 0 15px; }
 
@@ -261,10 +261,10 @@ footer .container img{   height: fit-content;  width: auto;     }
      header #mobi-nav .mobile-menu {    position: absolute; z-index: 298 !important;  top: -140px; left: 0;}
      header #mobi-nav:focus   .mobile-menu, header #mobi-nav:hover .mobile-menu{     display: block;        width: 100%; transform: translateY(230px);}
      header #mobi-nav .mobile-menu ul{  padding: 0;    margin: 0;     list-style: none;   }
-     header #mobi-nav .mobile-menu li{  background-color: #f8f8f8;    padding: 10px 20px; }
+     header #mobi-nav .mobile-menu li{  background-color: #f8f8f8;    padding: 15px 20px; }
      header #mobi-nav .mobile-menu li:hover a, header #mobi-nav .mobile-menu li:focus a{    color: #698cf0;     }
      header #mobi-nav .mobile-menu li a{     color: #212121;     font-weight: 700;   }
-     header #mobi-nav .mobile-menu li:last-child{      background-color: #698cf0;    text-align: center; }
+     header #mobi-nav .mobile-menu li:last-child{      background-color: #698cf0;    text-align: center;     padding: 10px 20px;  }
      header #mobi-nav .mobile-menu li:last-child a{    color: #fff;       text-transform: uppercase;     }
 
 
