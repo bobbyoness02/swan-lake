@@ -21,18 +21,18 @@ p span{   display: block;}
 
 
 /* Header */
-header{   background-color: #1c1c1c;    padding: 34px 0 70px; position: relative;    }
+header{   background-color: #1c1c1c;    padding: 34px 0 70px; position: relative;    z-index: 999;}
 header .container{  display: flex; justify-content: space-between;    align-items: center;     }
 header .container img{   height: fit-content;  width: auto;     }
 
      /* Header list */
      header #mobi-nav, #mobi-nav .mobile-menu{   display: none;}
-     header ul{     list-style: none;   margin: 0;     padding: 0 15px;    display: flex;    }
-     header .header li{     padding: 0 55px;    position: relative;}
-     header .header li>*{   display: block;     text-align: right;}
-     header .header li::after{   content: "";   display: inline-block;   height: 40px;  width: 40px;   padding: 5px;   border: 1px solid #292929;  border-radius: 50px;     position: absolute;  right: -45px;  top: 50%; transform: translate(-50%, -50%);}
-     header .header li::before{  content: "\f0e0";   display: inline-block;   position: absolute; font-family: fontawesome;     color: #698cf0;     top: 50%; right: 0;  font-size: 18px; transform: translate( 1px, -50%);    }
-     header .header li:last-child::before{ content: "\f095";   font-size: 20px;}
+     header  .container > ul{     list-style: none;   margin: 0;     padding: 0 15px;    display: flex;    }
+     header .header  .container > ul li{     padding: 0 55px;    position: relative;}
+     header .header  .container > ul li>*{   display: block;     text-align: right;}
+     header .header .container > ul li::after{   content: "";   display: inline-block;   height: 40px;  width: 40px;   padding: 5px;   border: 1px solid #292929;  border-radius: 50px;     position: absolute;  right: -45px;  top: 50%; transform: translate(-50%, -50%);}
+     header .header  .container > ul li::before{  content: "\f0e0";   display: inline-block;   position: absolute; font-family: fontawesome;     color: #698cf0;     top: 50%; right: 0;  font-size: 18px; transform: translate( 1px, -50%);    }
+     header .header  .container > ul li:last-child::before{ content: "\f095";   font-size: 20px;}
      header .header li strong{   color: #999;   font-size: 14px;    margin-bottom: 5px; }
      header .header li a{   color: white;  text-decoration: none;   font-size: 14px;}
 
@@ -254,15 +254,10 @@ footer .container img{   height: fit-content;  width: auto;     }
      /* Header */
      header{   padding: 20px 15px; }
      header ul{     display: none; }
-     header #mobi-nav{   display: block;     height: 30px;   width: 50%;   position: relative;}
-     header #mobi-nav .mobile-menu{     display: block;     width:100%; position: absolute; top: 50px;  left: -100px;    }
+     header #mobi-nav{   display: block;     height: 30px;   width: 30px;   }
      header #mobi-nav::after{ content: "\f0c9";   font-size: 30px;    font-family: FontAwesome;     color: #698cf0;     }
      
-     .mobile-menu ul{ padding: 0; margin: 0;  list-style:none;    background: tomato;    }
-     .mobile-menu { padding: 10px 20px;  background: mediumseagreen; border-bottom:  1px solid #999;  }
-     .mobile-menu li a{   color: #212121; text-decoration: none;  font-weight: 700;   font-family: ubuntu;    }
-     .mobile-menu li:last-child{  background: #698cf0;    text-align: center; }
-     .mobile-menu li:last-child a{    color: #fff;    text-transform:  uppercase;  }
+
 
      /* Navigation Bar */
      nav{ display: none;}
