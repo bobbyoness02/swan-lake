@@ -242,7 +242,7 @@ footer .container img{   height: fit-content;  width: auto;     }
      /* Services */
      #services .container{    flex-flow: row wrap-reverse;  }
      #services .left, #services .right{ width: auto;   }
-     #services .right{   padding: 0 50px;    }
+     #services .right{   padding: 0 50px 60px;    }
 
      /* Pricing List */
      #pricing-tbl ul{    flex-flow: row wrap;     }
