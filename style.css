@@ -241,11 +241,11 @@ footer .container img{   height: fit-content;  width: auto;     }
 
      /* Services */
      #services .container{    flex-flow: row wrap-reverse;  }
-     #services .left, #services .right{ width: auto;}
-     #services .right{   padding-left: 50px;}
+     #services .left, #services .right{ width: auto;   }
+     #services .right{   padding: 0 50px;    }
 
      /* Pricing List */
-     #pricing-tbl ul{    flex-flow: row wrap;}
+     #pricing-tbl ul{    flex-flow: row wrap;     }
      #pricing-tbl li{    width: 48%;    }
 }
 
@@ -254,7 +254,7 @@ footer .container img{   height: fit-content;  width: auto;     }
      .container{    margin: 0;     }
 
      /* Header */
-     header{   padding: 20px 15px; z-index: 999;}
+     header{   padding: 20px 0px;  z-index: 999;}
      header .container  > ul{     display: none; }
      header #mobi-nav{   display: block;     height: 30px;   width: 30px;   }
      header #mobi-nav::after{ content: "\f0c9";   font-size: 30px;    font-family: FontAwesome;     color: #698cf0;     }
@@ -262,9 +262,10 @@ footer .container img{   height: fit-content;  width: auto;     }
      header #mobi-nav:focus   .mobile-menu, header #mobi-nav:hover .mobile-menu{     display: block;        width: 100%; transform: translateY(230px);}
      header #mobi-nav .mobile-menu ul{  padding: 0;    margin: 0;     list-style: none;   }
      header #mobi-nav .mobile-menu li{  background-color: #f8f8f8;    padding: 10px 20px; }
+     header #mobi-nav .mobile-menu li:hover a, header #mobi-nav .mobile-menu li:focus a{    color: #698cf0;     }
      header #mobi-nav .mobile-menu li a{     color: #212121;     font-weight: 700;   }
      header #mobi-nav .mobile-menu li:last-child{      background-color: #698cf0;    text-align: center; }
-     header #mobi-nav .mobile-menu li:last-child a{    color: #fff;   }
+     header #mobi-nav .mobile-menu li:last-child a{    color: #fff;       text-transform: uppercase;     }
 
 
      /* Navigation Bar */
@@ -316,6 +317,8 @@ footer .container img{   height: fit-content;  width: auto;     }
 @media screen and (max-width: 579px){
      /* Hero Banner */
      #hero-bnr form span:last-child {   margin: 0;   display: block;   width: fit-content;    margin: auto; margin-top: 20px;     }
+     #hero-bnr .form-msg{     display: block;     }
+
      /* Services */
      #services .left ul{ background-size: auto;   background-position: 0px 0px;}
 
