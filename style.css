@@ -99,7 +99,7 @@ header .container img{   height: fit-content;  width: auto;     }
 #services .container{    align-items: flex-start; margin: 0 -30px;    }
 #services .container>*{     padding: 0 15px 60px;   }
 #services .left, #services .right{    width: 50%;    height: 100%;}
-#services .left ul{ list-style: none;   padding: 0;    margin: 0;   border-radius: 4px;   overflow: hidden;    background-image: url('/Media/services\ box\ background.jpg'); background-position: center;     background-repeat: no-repeat; }
+#services .left ul{ list-style: none;   padding: 0;    margin: 0;   border-radius: 4px;   overflow: hidden;    background-image: url('./Media/services\ box\ background.jpg'); background-position: center;     background-repeat: no-repeat; }
 #services .left .bg-trans{    background: rgba(21,21,21,0.8);    }
 #services .right .txt-box{    padding:40px 0 0 40px;   }
 #services .right h2, #services .right p,#services .right ul{     margin: 0;     padding: 0;    list-style: none;   }
