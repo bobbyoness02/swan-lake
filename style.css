@@ -13,7 +13,7 @@ body{     margin: 0;     padding: 0;  }
 .btn{     background-color: #689cf0;    border: 1px solid #698cf0;    }
 .btn:hover{    background-color: #1c1c1c !important;    border: 1px solid #999;}
 
-.divider{   display: inline-block;   height: 10px;  width: 62px;   background-image: url('media/divider-mini.png');  margin-bottom: 5px; }
+.divider{   display: inline-block;   height: 10px;  width: 62px;   background-image: url('./media/divider-mini.png');  margin-bottom: 5px; }
 
 .rd-more, .ord-now{  text-decoration: none;  color: #698cf0;  font-size: 14px; font-weight: 700;    }
 
@@ -63,7 +63,7 @@ header .container img{   height: fit-content;  width: auto;     }
 #hero-bnr .container .left{   width: 60%;    position: relative;}
 #her-bnr .left img{ position: absolute; left: 450px;    top: 250px;   }
 #hero-bnr .container .right{  width: 460px;    }
-#hero-bnr .right{     background: url(Media/Reg\ Now\ Background.jpg);      padding: 55px 30px 70px; text-align: center;   margin: -95px 0;    border-radius: 3px; }
+#hero-bnr .right{     background: url('./Media/Reg\ Now\ Background.jpg');      padding: 55px 30px 70px; text-align: center;   margin: -95px 0;    border-radius: 3px; }
 #hero-bnr .right input{  display: block;   width: 100%;     padding: 6px 23px;  height: 48px;  outline: 0;    border: none; border-radius: 4px; border: 1px solid #eee;   margin-bottom: 20px;     background-color: #f5f5f5}
 #hero-bnr form ::placeholder{     opacity: .7;}
 #hero-bnr .right h2{ font-size: 28px;    margin: 0 0 5px;}
@@ -125,7 +125,7 @@ header .container img{   height: fit-content;  width: auto;     }
 
 /* Pricing Table */
 #pricing-tbl .max-width{ padding : 0 15px;   }
-#pricing-tbl{  padding: 120px 0 60px;   background-image: url('media/Reg\ Now\ Background.jpg');    background-size: cover;  background-repeat: no-repeat; background-position: center center;}
+#pricing-tbl{  padding: 120px 0 60px;   background-image: url('./media/Reg\ Now\ Background.jpg');    background-size: cover;  background-repeat: no-repeat; background-position: center center;}
 #pricing-tbl .container{ display: block;     text-align: center; }
 #pricing-tbl .container > .divider{     width: 48px;     margin-bottom: 15px;     }
 #pricing-tbl .container > p{     margin:   0; margin-bottom: 70px;     color: #999;  font-size: 14px;    }
@@ -147,7 +147,7 @@ header .container img{   height: fit-content;  width: auto;     }
 
 
 /* Get a free quote today */
-#cre-un{  position: relative; padding: 120px 0;   background-image: url('media/free\ quote\ background\ image.jpg');    background-position: center center; background-size: cover; background-attachment: fixed; }
+#cre-un{  position: relative; padding: 120px 0;   background-image: url('./media/free\ quote\ background\ image.jpg');    background-position: center center; background-size: cover; background-attachment: fixed; }
 #cre-un::after{     content: "";   background-color: #000;  position: absolute; z-index: 0;    top: 0;   left: 0;  width: 100%;   height: 100%;  opacity: 0.8;  }
 #cre-un .container{ display: block;     text-align: center; color: #f8f8f8; position: relative;   z-index: 5;    }
 #cre-un .container span:first-child{    font-size: 14px;    line-height: 1.7;   font-family: open sans;  }
