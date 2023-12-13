@@ -324,6 +324,10 @@ footer .container img{   height: fit-content;  width: auto;     }
 
      /* Creative Landing Page */
      #cre-un::after{     opacity: 0.7;  }
+
+     /* Footer */
+     footer .footer ul{  flex-direction: column;  padding: 0;    }
+     footer .footer li{  margin: 40px 0 0;   }
      
      /* Goto top */
      #got{     display: none;     }
