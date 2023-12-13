@@ -13,7 +13,7 @@ body{     margin: 0;     padding: 0;  }
 .btn{     background-color: #689cf0;    border: 1px solid #698cf0;    }
 .btn:hover{    background-color: #1c1c1c !important;    border: 1px solid #999;}
 
-.divider{   display: inline-block;   height: 10px;  width: 62px;   background-image: url('./Media/divider-mini.png');  margin-bottom: 5px; }
+.divider{   display: inline-block;   height: 10px;  width: 62px;   background-image: url(Media/divider-mini.png);  margin-bottom: 5px; }
 
 .rd-more, .ord-now{  text-decoration: none;  color: #698cf0;  font-size: 14px; font-weight: 700;    }
 
