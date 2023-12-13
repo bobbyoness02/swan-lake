@@ -27,12 +27,12 @@ header .container img{   height: fit-content;  width: auto;     }
 
      /* Header list */
      header #mobi-nav, #mobi-nav .mobile-menu{   display: none;}
-     header ul{     list-style: none;   margin: 0;     padding: 0 15px;    display: flex;    }
-     header .header li{     padding: 0 55px;    position: relative;}
-     header .header li>*{   display: block;     text-align: right;}
-     header .header li::after{   content: "";   display: inline-block;   height: 40px;  width: 40px;   padding: 5px;   border: 1px solid #292929;  border-radius: 50px;     position: absolute;  right: -45px;  top: 50%; transform: translate(-50%, -50%);}
-     header .header li::before{  content: "\f0e0";   display: inline-block;   position: absolute; font-family: fontawesome;     color: #698cf0;     top: 50%; right: 0;  font-size: 18px; transform: translate( 1px, -50%);    }
-     header .header li:last-child::before{ content: "\f095";   font-size: 20px;}
+     header  .container > ul{     list-style: none;   margin: 0;     padding: 0 15px;    display: flex;    }
+     header .header  .container > ul li{     padding: 0 55px;    position: relative;}
+     header .header  .container > ul li>*{   display: block;     text-align: right;}
+     header .header .container > ul li::after{   content: "";   display: inline-block;   height: 40px;  width: 40px;   padding: 5px;   border: 1px solid #292929;  border-radius: 50px;     position: absolute;  right: -45px;  top: 50%; transform: translate(-50%, -50%);}
+     header .header  .container > ul li::before{  content: "\f0e0";   display: inline-block;   position: absolute; font-family: fontawesome;     color: #698cf0;     top: 50%; right: 0;  font-size: 18px; transform: translate( 1px, -50%);    }
+     header .header  .container > ul li:last-child::before{ content: "\f095";   font-size: 20px;}
      header .header li strong{   color: #999;   font-size: 14px;    margin-bottom: 5px; }
      header .header li a{   color: white;  text-decoration: none;   font-size: 14px;}
 
@@ -260,10 +260,13 @@ footer .container img{   height: fit-content;  width: auto;     }
      .container{    margin: 0;     }
      /* Header */
      header{   padding: 20px 15px; }
-     header ul{     display: none; }
-     header #mobi-nav{   display: block;     height: 30px;   width: 30px;   }
+     header .container > ul{     display: none; }
+     header #mobi-nav{   display: block;    }
      header #mobi-nav::after{ content: "\f0c9";   font-size: 30px;    font-family: FontAwesome;     color: #698cf0;     }
-     
+     header #mobi-nav:hover .mobile-menu,   header #mobi-nav:focus .mobile-menu{     display: block;     position: absolute; top: 100px;    left:0;   width: 100%;  z-index: 399;   }
+     header #mobi-nav .mobile-menu ul{  padding: 0;    margin: 0;     list-style: none;   }
+     header #mobi-nav .mobile-menu li{   background-color: #f8f8f8;    padding: 10px 20px; }
+     header #mobi-nav .mobile-menu li a{     color: #212121;     font-weight: 700;   }
 
 
      /* Navigation Bar */
