@@ -1,5 +1,7 @@
 *{   box-sizing: border-box;     font-family: Ubuntu,Arial, Helvetica, sans-serif;   transition: 0.25s;}
 
+:hover{   transition: 0.25s;  ;}
+
 html{     scroll-behavior: smooth;}
 
 .max-width{  max-width: 1170px;  margin: auto;  padding: 0 15px; }
@@ -21,7 +23,7 @@ p span{   display: block;}
 
 
 /* Header */
-header{   background-color: #1c1c1c;    padding: 34px 0 70px; position: relative;    z-index: 999;}
+header{   background-color: #1c1c1c;    padding: 34px 0 70px; position: relative;    z-index: 299;}
 header .container{  display: flex; justify-content: space-between;    align-items: center;     }
 header .container img{   height: fit-content;  width: auto;     }
 
@@ -252,17 +254,24 @@ footer .container img{   height: fit-content;  width: auto;     }
      .container{    margin: 0;     }
 
      /* Header */
-     header{   padding: 20px 15px; }
-     header ul{     display: none; }
+     header{   padding: 20px 15px; z-index: 999;}
+     header .container  > ul{     display: none; }
      header #mobi-nav{   display: block;     height: 30px;   width: 30px;   }
      header #mobi-nav::after{ content: "\f0c9";   font-size: 30px;    font-family: FontAwesome;     color: #698cf0;     }
-     
+     header #mobi-nav .mobile-menu {    position: absolute; z-index: 298 !important;  top: -140px; left: 0;}
+     header #mobi-nav:focus   .mobile-menu, header #mobi-nav:hover .mobile-menu{     display: block;        width: 100%; transform: translateY(230px);}
+     header #mobi-nav .mobile-menu ul{  padding: 0;    margin: 0;     list-style: none;   }
+     header #mobi-nav .mobile-menu li{  background-color: #f8f8f8;    padding: 10px 20px; }
+     header #mobi-nav .mobile-menu li a{     color: #212121;     font-weight: 700;   }
+     header #mobi-nav .mobile-menu li:last-child{      background-color: #698cf0;    text-align: center; }
+     header #mobi-nav .mobile-menu li:last-child a{    color: #fff;   }
 
 
      /* Navigation Bar */
      nav{ display: none;}
 
      /* Hero Banner */
+     #hero-bnr{     margin-top: 0; }
      #hero-bnr .left img{     display: none; }
      #hero-bnr .container{    flex-flow: row wrap;}
      #hero-bnr .container .right, #hero-bnr .container .left{    width: 100%;   }
@@ -301,13 +310,27 @@ footer .container img{   height: fit-content;  width: auto;     }
      #footer-btm .container{  margin: 0;     padding: 20px 0;    }
 
      /* Go to top */
-     #got{     top: 80%; }
+     #got{     top: 80%; left: 89%;}
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 579px){
+     /* Hero Banner */
+     #hero-bnr form span:last-child {   margin: 0;   display: block;   width: fit-content;    margin: auto; margin-top: 20px;     }
+     /* Services */
+     #services .left ul{ background-size: auto;   background-position: 0px 0px;}
      
+     /* Goto top */
+     #got{     display: none;     }
+}
+
+@media screen and (max-width: 480px){
+     /* Pricing Table */
+     #pricing-tbl li div:first-child, #pricing-tbl li div:last-child{  padding: 30px; }
 
      /* Footer */
      footer .footer ul{     display: block;  padding: 0;}
      footer .footer ul li{        margin-top: 30px;     }
+     #footer-btm .container{  display: block;    text-align: center;  padding: 20px 0 0;  }
+     #footer-btm .container .sm-icons{  margin-top: 20px;   ;}
+
 }
