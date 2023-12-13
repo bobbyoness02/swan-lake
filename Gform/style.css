@@ -13,7 +13,7 @@ h3{  font-size: 18px;    letter-spacing: initial; line-height: 1.5;}
 
 /* Header */
 header{  padding: 60px 30px 70px;  background-color: #fff;  position: relative; z-index: 9999;}
-header .container{  position: relative; z-index: 9999; justify-content: space-between;	align-items:end; line-height: 0;}
+header .container{  position: relative; z-index: 9999; justify-content: space-between;	align-items:end; }
 header ul{  list-style: none;  display: inline-block;  margin:0;	padding:0;	}
 header .container-inner{ max-width: 1840px;   }
 header ul li{	display: inline-block;	}
@@ -26,6 +26,7 @@ header .lang a{     color: #fff;   font-weight: initial;}
 header img{  width: 260px;  }
 header .container-inner>*{    margin: 0 2.4%;     padding: 9px 0;     }
 header .left{	line-height:0;	padding: 10px 1.92%;}
+header .right{ margin-right: 50px; }
 header>.right{ margin-top: 20px;   margin-right: 60px; line-height: initial;  }
 header .right .lang{     text-align:center;  position:absolute;    top:-60px;    right: 0px;  line-height:60px;  background-color:#7270b1;  height:60px;     width:120px;   border-bottom-right-radius:100px;     border-bottom-left-radius:100px; }
 header .right .lang>li:first-child {      padding-right: 10px;     margin-right: 10px;    position: relative; }
@@ -110,9 +111,9 @@ footer a, footer span, footer p{ color: #fff;  text-decoration: none;  font-fami
 /* Ciikies Script */
           /* Cookie Script icon */
           #cookieScript{ height: 3rem;  width: 3rem;  padding: 5px; background-color: #3b1c45;    border-radius: 50px;  transition: width .9s; position: fixed; bottom: 1rem;    left: 1rem;     display: flex; align-items: center;    }
-          #cookieScript svg{  height: 2.5rem;  }
+          #cookieScript svg{  height: l;  }
           #cookieScript:hover{    width: 220px;  cursor: pointer;  }
-          #cookieScript:hover p{    padding-left: 15px;     display: block; font-weight: 600; }
+          #cookieScript:hover p{   margin: auto;     display: block; font-weight: 600; }
           #cookieScript p{     color: #fff;        font-size: initial;    display: none; }
 
           /* Cookies form */
