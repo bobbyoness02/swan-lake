@@ -21,7 +21,7 @@ p span{   display: block;}
 
 
 /* Header */
-header{   background-color: #1c1c1c;    padding: 34px 0 70px; position: relative;    }
+header{   background-color: #1c1c1c;    padding: 34px 0 70px; position: relative;    z-index: 999;}
 header .container{  display: flex; justify-content: space-between;    align-items: center;     }
 header .container img{   height: fit-content;  width: auto;     }
 
@@ -267,6 +267,8 @@ footer .container img{   height: fit-content;  width: auto;     }
      header #mobi-nav .mobile-menu ul{  padding: 0;    margin: 0;     list-style: none;   }
      header #mobi-nav .mobile-menu li{   background-color: #f8f8f8;    padding: 10px 20px; }
      header #mobi-nav .mobile-menu li a{     color: #212121;     font-weight: 700;   }
+     header #mobi-nav .mobile-menu li:last-child{ text-align: center; background-color: #698cf0;    }
+     header #mobi-nav .mobile-menu li:last-child a{    color: #fff;   }
 
 
      /* Navigation Bar */
