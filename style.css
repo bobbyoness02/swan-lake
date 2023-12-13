@@ -52,7 +52,7 @@ header .container img{   height: fit-content;  width: auto;     }
      .nav-menu .right li a{ color: #fff;   font-size: 13px;    }
 
 /* Hero Banner */
-#hero-bnr{     background-image: url(Media/hero\ banner.jpg);     background-position: center center;    background-size: cover;  background-repeat: no-repeat; background-attachment: fixed; margin-top: -40px;}
+#hero-bnr{     background-image: url('./Media/hero\ banner.jpg');     background-position: center center;    background-size: cover;  background-repeat: no-repeat; background-attachment: fixed; margin-top: -40px;}
 #hero-bnr .container{    align-items: flex-start;}
 #hero-bnr .overlay{ width: 100%;   height: 100%;  background-color: rgba(0, 0, 0, 0.75);   padding: 220px 0;   }
 #hero-bnr .left{    color: #fff;    }
@@ -63,7 +63,7 @@ header .container img{   height: fit-content;  width: auto;     }
 #hero-bnr .container .left{   width: 60%;    position: relative;}
 #her-bnr .left img{ position: absolute; left: 450px;    top: 250px;   }
 #hero-bnr .container .right{  width: 460px;    }
-#hero-bnr .right{     background: url("Media/Reg\ Now\ Background.jpg");      padding: 55px 30px 70px; text-align: center;   margin: -95px 0;    border-radius: 3px; }
+#hero-bnr .right{     background: url(Media/Reg\ Now\ Background.jpg);      padding: 55px 30px 70px; text-align: center;   margin: -95px 0;    border-radius: 3px; }
 #hero-bnr .right input{  display: block;   width: 100%;     padding: 6px 23px;  height: 48px;  outline: 0;    border: none; border-radius: 4px; border: 1px solid #eee;   margin-bottom: 20px;     background-color: #f5f5f5}
 #hero-bnr form ::placeholder{     opacity: .7;}
 #hero-bnr .right h2{ font-size: 28px;    margin: 0 0 5px;}
@@ -89,7 +89,7 @@ header .container img{   height: fit-content;  width: auto;     }
      #aboutsl .about-box p, #aboutsl .about-box a{     font-size: 12px;    }
 
 /* Counter Box */
-#counter-sec{  padding: 120px 0;   background: url('media/Counter\ section.jpg'); background-position: center; background-repeat: no-repeat;   background-size: cover;  }
+#counter-sec{  padding: 120px 0;   background: url('./media/Counter\ section.jpg'); background-position: center; background-repeat: no-repeat;   background-size: cover;  }
 #counter-sec .counter-box{    width: 25%;    text-align: center; padding: 20px; }
 #counter-sec .counter-box h2{ color: #698cf0;     font-size: 72px;    font-weight: 500;  font-family: Open Sans;    margin: 0;    line-height: 1;     }
 #counter-sec .counter-box p{  color: #999;     margin: 0;     } 
