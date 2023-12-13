@@ -250,13 +250,19 @@ footer .container img{   height: fit-content;  width: auto;     }
 @media screen and (max-width: 768px){
      .max-width{    max-width: 970px;   }
      .container{    margin: 0;     }
+
      /* Header */
      header{   padding: 20px 15px; }
      header ul{     display: none; }
-     header #mobi-nav{   display: block;     height: 30px;   width: 30px;   }
+     header #mobi-nav{   display: block;     height: 30px;   width: 50%;   position: relative;}
+     header #mobi-nav .mobile-menu{     display: block;     width:100%; position: absolute; top: 50px;  left: -100px;    }
      header #mobi-nav::after{ content: "\f0c9";   font-size: 30px;    font-family: FontAwesome;     color: #698cf0;     }
      
-
+     .mobile-menu ul{ padding: 0; margin: 0;  list-style:none;    background: tomato;    }
+     .mobile-menu { padding: 10px 20px;  background: mediumseagreen; border-bottom:  1px solid #999;  }
+     .mobile-menu li a{   color: #212121; text-decoration: none;  font-weight: 700;   font-family: ubuntu;    }
+     .mobile-menu li:last-child{  background: #698cf0;    text-align: center; }
+     .mobile-menu li:last-child a{    color: #fff;    text-transform:  uppercase;  }
 
      /* Navigation Bar */
      nav{ display: none;}
