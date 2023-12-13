@@ -318,6 +318,9 @@ footer .container img{   height: fit-content;  width: auto;     }
      #hero-bnr form span:last-child {   margin: 0;   display: block;   width: fit-content;    margin: auto; margin-top: 20px;     }
      /* Services */
      #services .left ul{ background-size: auto;   background-position: 0px 0px;}
+
+     /* Creative Landing Page */
+     #cre-un::after{     opacity: 0.7;  }
      
      /* Goto top */
      #got{     display: none;     }
